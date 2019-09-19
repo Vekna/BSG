@@ -1,0 +1,342 @@
+ .body_carousel {
+    margin: 0px;
+    padding: 0px;
+    padding-bottom: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+ 
+.carousel {
+    position: relative;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
+    margin-top: 26px;
+}
+ 
+.carousel-inner {
+    position: relative;
+    overflow: hidden;
+    /*width: 100%;*/
+}
+ 
+.carousel-inner>.next, .carousel-inner>.prev {
+    position: absolute;
+    top: 50%;
+    width: 37px;
+}
+.carousel-inner>.next {
+   /* left: 93%; */
+}
+.carousel-open:checked + .carousel-item {
+    position: static;
+    opacity: 100;
+}
+ 
+.carousel-item {
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: opacity 0.6s ease-out;
+    transition: opacity 0.6s ease-out;
+}
+ 
+.carousel-item img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+ 
+.carousel-control {
+    background: rgba(0, 0, 0, 0.28);
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    font-size: 40px;
+    height: 40px;
+    line-height: 35px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    cursor: pointer;
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    text-align: center;
+    width: 40px;
+    z-index: 10;
+}
+ 
+.carousel-control.prev {
+    right: 2%;
+}
+ 
+.carousel-control:hover {
+    background: rgba(0, 0, 0, 0.8);
+    color: #aaaaaa;
+}
+ 
+#carousel-1:checked ~ .control-1,
+#carousel-2:checked ~ .control-2,
+#carousel-3:checked ~ .control-3,
+#carousel-4:checked ~ .control-4,
+#carousel-5:checked ~ .control-5,
+#carousel-6:checked ~ .control-6,
+#carousel-7:checked ~ .control-7,
+#carousel-8:checked ~ .control-8,
+#carousel-9:checked ~ .control-9,
+#carousel-10:checked ~ .control-10,
+#carousel-11:checked ~ .control-11,
+#carousel-12:checked ~ .control-12,
+#carousel-13:checked ~ .control-13,
+#carousel-14:checked ~ .control-14,
+#carousel-15:checked ~ .control-15,
+#carousel-16:checked ~ .control-16,
+#carousel-17:checked ~ .control-17,
+#carousel-18:checked ~ .control-18,
+#carousel-19:checked ~ .control-19,
+#carousel-20:checked ~ .control-20,
+#carousel-21:checked ~ .control-21,
+#carousel-22:checked ~ .control-22,
+#carousel-23:checked ~ .control-23,
+#carousel-24:checked ~ .control-24,
+#carousel-25:checked ~ .control-25,
+#carousel-26:checked ~ .control-26,
+#carousel-27:checked ~ .control-27,
+#carousel-28:checked ~ .control-28,
+#carousel-29:checked ~ .control-29,
+#carousel-30:checked ~ .control-30,
+#carousel-31:checked ~ .control-31,
+#carousel-32:checked ~ .control-32,
+#carousel-33:checked ~ .control-33,
+#carousel-34:checked ~ .control-34,
+#carousel-35:checked ~ .control-35,
+#carousel-36:checked ~ .control-36,
+#carousel-37:checked ~ .control-37,
+#carousel-38:checked ~ .control-38,
+#carousel-39:checked ~ .control-39,
+#carousel-40:checked ~ .control-40,
+#carousel-41:checked ~ .control-41,
+#carousel-42:checked ~ .control-42,
+#carousel-43:checked ~ .control-43,
+#carousel-44:checked ~ .control-44,
+#carousel-45:checked ~ .control-45,
+#carousel-46:checked ~ .control-46,
+#carousel-47:checked ~ .control-47,
+#carousel-48:checked ~ .control-48,
+#carousel-49:checked ~ .control-49,
+#carousel-50:checked ~ .control-50,
+#carousel-51:checked ~ .control-51,
+#carousel-52:checked ~ .control-52,
+#carousel-53:checked ~ .control-53,
+#carousel-54:checked ~ .control-54,
+#carousel-55:checked ~ .control-55,
+#carousel-56:checked ~ .control-56,
+#carousel-57:checked ~ .control-57,
+#carousel-58:checked ~ .control-58,
+#carousel-59:checked ~ .control-59,
+#carousel-60:checked ~ .control-60,
+#carousel-61:checked ~ .control-61,
+#carousel-62:checked ~ .control-62,
+#carousel-63:checked ~ .control-63,
+#carousel-64:checked ~ .control-64,
+#carousel-65:checked ~ .control-65,
+#carousel-66:checked ~ .control-66,
+#carousel-67:checked ~ .control-67  {
+    display: block;
+}
+ 
+.carousel-indicators {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+    width: 100%;
+}
+ 
+.carousel-indicators li {
+    display: inline-block;
+    margin: 0 5px;
+    border:0;
+    text-indent: 0px;
+}
+ 
+ 
+ 
+.carousel-bullet {
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 35px;
+}
+ 
+.carousel-bullet:hover {
+    color: #aaaaaa;
+}
+ 
+#carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
+#carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
+#carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet,
+#carousel-4:checked ~ .control-4 ~ .carousel-indicators li:nth-child(4) .carousel-bullet,
+#carousel-5:checked ~ .control-5 ~ .carousel-indicators li:nth-child(5) .carousel-bullet,
+#carousel-6:checked ~ .control-6 ~ .carousel-indicators li:nth-child(6) .carousel-bullet,
+#carousel-7:checked ~ .control-7 ~ .carousel-indicators li:nth-child(7) .carousel-bullet,
+#carousel-8:checked ~ .control-8 ~ .carousel-indicators li:nth-child(8) .carousel-bullet,
+#carousel-9:checked ~ .control-9 ~ .carousel-indicators li:nth-child(9) .carousel-bullet,
+#carousel-10:checked ~ .control-10 ~ .carousel-indicators li:nth-child(10) .carousel-bullet,
+#carousel-11:checked ~ .control-11 ~ .carousel-indicators li:nth-child(11) .carousel-bullet,
+#carousel-12:checked ~ .control-12 ~ .carousel-indicators li:nth-child(12) .carousel-bullet,
+#carousel-13:checked ~ .control-13 ~ .carousel-indicators li:nth-child(13) .carousel-bullet,
+#carousel-14:checked ~ .control-14 ~ .carousel-indicators li:nth-child(14) .carousel-bullet,
+#carousel-15:checked ~ .control-15 ~ .carousel-indicators li:nth-child(15) .carousel-bullet,
+#carousel-16:checked ~ .control-16 ~ .carousel-indicators li:nth-child(16) .carousel-bullet,
+#carousel-17:checked ~ .control-17 ~ .carousel-indicators li:nth-child(17) .carousel-bullet,
+#carousel-18:checked ~ .control-18 ~ .carousel-indicators li:nth-child(18) .carousel-bullet,
+#carousel-19:checked ~ .control-19 ~ .carousel-indicators li:nth-child(19) .carousel-bullet,
+#carousel-20:checked ~ .control-20 ~ .carousel-indicators li:nth-child(20) .carousel-bullet,
+#carousel-21:checked ~ .control-21 ~ .carousel-indicators li:nth-child(21) .carousel-bullet,
+#carousel-22:checked ~ .control-22 ~ .carousel-indicators li:nth-child(22) .carousel-bullet,
+#carousel-23:checked ~ .control-23 ~ .carousel-indicators li:nth-child(23) .carousel-bullet,
+#carousel-24:checked ~ .control-24 ~ .carousel-indicators li:nth-child(24) .carousel-bullet,
+#carousel-25:checked ~ .control-25 ~ .carousel-indicators li:nth-child(25) .carousel-bullet,
+#carousel-26:checked ~ .control-26 ~ .carousel-indicators li:nth-child(26) .carousel-bullet,
+#carousel-27:checked ~ .control-27 ~ .carousel-indicators li:nth-child(27) .carousel-bullet,
+#carousel-28:checked ~ .control-28 ~ .carousel-indicators li:nth-child(28) .carousel-bullet,
+#carousel-29:checked ~ .control-29 ~ .carousel-indicators li:nth-child(29) .carousel-bullet,
+#carousel-30:checked ~ .control-30 ~ .carousel-indicators li:nth-child(30) .carousel-bullet,
+#carousel-31:checked ~ .control-31 ~ .carousel-indicators li:nth-child(31) .carousel-bullet,
+#carousel-32:checked ~ .control-32 ~ .carousel-indicators li:nth-child(32) .carousel-bullet,
+#carousel-33:checked ~ .control-33 ~ .carousel-indicators li:nth-child(33) .carousel-bullet,
+#carousel-34:checked ~ .control-34 ~ .carousel-indicators li:nth-child(34) .carousel-bullet,
+#carousel-35:checked ~ .control-35 ~ .carousel-indicators li:nth-child(35) .carousel-bullet,
+#carousel-36:checked ~ .control-36 ~ .carousel-indicators li:nth-child(36) .carousel-bullet,
+#carousel-37:checked ~ .control-37 ~ .carousel-indicators li:nth-child(37) .carousel-bullet,
+#carousel-38:checked ~ .control-38 ~ .carousel-indicators li:nth-child(38) .carousel-bullet,
+#carousel-39:checked ~ .control-39 ~ .carousel-indicators li:nth-child(39) .carousel-bullet,
+#carousel-40:checked ~ .control-40 ~ .carousel-indicators li:nth-child(40) .carousel-bullet,
+#carousel-41:checked ~ .control-41 ~ .carousel-indicators li:nth-child(41) .carousel-bullet,
+#carousel-42:checked ~ .control-42 ~ .carousel-indicators li:nth-child(42) .carousel-bullet,
+#carousel-43:checked ~ .control-43 ~ .carousel-indicators li:nth-child(43) .carousel-bullet,
+#carousel-44:checked ~ .control-44 ~ .carousel-indicators li:nth-child(44) .carousel-bullet,
+#carousel-45:checked ~ .control-45 ~ .carousel-indicators li:nth-child(45) .carousel-bullet,
+#carousel-46:checked ~ .control-46 ~ .carousel-indicators li:nth-child(46) .carousel-bullet,
+#carousel-47:checked ~ .control-47 ~ .carousel-indicators li:nth-child(47) .carousel-bullet,
+#carousel-48:checked ~ .control-48 ~ .carousel-indicators li:nth-child(48) .carousel-bullet,
+#carousel-49:checked ~ .control-49 ~ .carousel-indicators li:nth-child(49) .carousel-bullet,
+#carousel-50:checked ~ .control-50 ~ .carousel-indicators li:nth-child(50) .carousel-bullet,
+#carousel-51:checked ~ .control-51 ~ .carousel-indicators li:nth-child(51) .carousel-bullet,
+#carousel-52:checked ~ .control-52 ~ .carousel-indicators li:nth-child(52) .carousel-bullet,
+#carousel-53:checked ~ .control-53 ~ .carousel-indicators li:nth-child(53) .carousel-bullet,
+#carousel-54:checked ~ .control-54 ~ .carousel-indicators li:nth-child(54) .carousel-bullet,
+#carousel-55:checked ~ .control-55 ~ .carousel-indicators li:nth-child(55) .carousel-bullet,
+#carousel-56:checked ~ .control-56 ~ .carousel-indicators li:nth-child(56) .carousel-bullet,
+#carousel-57:checked ~ .control-57 ~ .carousel-indicators li:nth-child(57) .carousel-bullet,
+#carousel-58:checked ~ .control-58 ~ .carousel-indicators li:nth-child(58) .carousel-bullet,
+#carousel-59:checked ~ .control-59 ~ .carousel-indicators li:nth-child(59) .carousel-bullet,
+#carousel-60:checked ~ .control-60 ~ .carousel-indicators li:nth-child(60) .carousel-bullet,
+#carousel-61:checked ~ .control-61 ~ .carousel-indicators li:nth-child(61) .carousel-bullet,
+#carousel-62:checked ~ .control-62 ~ .carousel-indicators li:nth-child(62) .carousel-bullet,
+#carousel-63:checked ~ .control-63 ~ .carousel-indicators li:nth-child(63) .carousel-bullet,
+#carousel-64:checked ~ .control-64 ~ .carousel-indicators li:nth-child(64) .carousel-bullet,
+#carousel-65:checked ~ .control-65 ~ .carousel-indicators li:nth-child(65) .carousel-bullet,
+#carousel-66:checked ~ .control-66 ~ .carousel-indicators li:nth-child(66) .carousel-bullet,
+#carousel-67:checked ~ .control-67 ~ .carousel-indicators li:nth-child(67) .carousel-bullet  {
+    color: #428bca;
+}
+ 
+#title {
+    width: 100%;
+    position: absolute;
+    padding: 0px;
+    margin: 0px auto;
+    text-align: center;
+    font-size: 27px;
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Open Sans', sans-serif;
+    z-index: 9999;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), -1px 0px 2px rgba(255, 255, 255, 0);   
+    
+}
+
+
+.carousel-caption {
+    position: absolute;
+    z-index: 1;
+    display:table;
+    width:100%;
+    height:100%;
+}
+
+.absolute-div {
+    position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+}
+
+.carousel-caption h3 {
+     margin-top: 250px;
+     margin-left: 1100px;
+     text-align: left;
+     font-size: 30px;
+     color: #ffffff;
+     font-family: Arial, Helvetica, sans-serif;
+}
+
+.item {
+    position:relative;
+}
+
+
+
+.container {
+     margin-top: 60px;
+     margin-left: 800px;
+     text-align: left;
+     font-size: 16px;
+     color: #ffffff;
+     font-family: Arial, Helvetica, sans-serif;
+     font-weight: bold
+
+}
+
+#table {
+     margin-top: 20px;
+     text-align: center;
+     font-size: 40px;
+     color: #c3fdff;
+     font-family: Arial;
+     font-weight: bold;
+     
+}
+
+
+.td {outline: 1px solid #c3fdff;
+}
+
+     
+.text {
+	FONT-WEIGHT: normal; FONT-SIZE: 100%;  margin: 10; COLOR: #ffffff;   TEXT-DECORATION: none 
+}
+
+
+.link {
+	FONT-WEIGHT: bold; FONT-SIZE: 40px;  margin: 10; COLOR: #c3fdff;   TEXT-DECORATION: none; font-family: Arial, Helvetica, sans-serif;
+}
+
+.link:hover {
+	FONT-WEIGHT: bold; FONT-SIZE: 40px;  margin: 10; COLOR: #c3fdff;   TEXT-DECORATION: underline; font-family: Arial, Helvetica, sans-serif;
+}
+
+.linkusual {
+	FONT-WEIGHT: bold; FONT-SIZE: 20px;  margin: 10; COLOR: #c3fdff;   TEXT-DECORATION: none; font-family: Arial, Helvetica, sans-serif; 
+}
+
+.linkusual:hover {
+	FONT-WEIGHT: bold; FONT-SIZE: 20px;  margin: 10; COLOR: #c3fdff;   TEXT-DECORATION: underline; font-family: Arial, Helvetica, sans-serif; 
+}
+
